@@ -84,11 +84,13 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
+  color: #504b4d;
   font-family: sans-serif;
 }
 
 a { 
   display: inline-block;
+  color: #504b4d;
   text-decoration: none; 
 }
 
@@ -99,16 +101,122 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  width: 72.2%; 
   margin: 0 auto;
 }
+
+/* for uppercase */
+
+.uppercase-text { text-transform: uppercase; }
+
 /*=================================
   Header styling starts here
 =================================*/
 
+.header-section { 
+  background-color: #f6eddc;
+}
+
+.header-info { border-bottom: 2px solid #e8ddcf; }
+
+.header-info .wrapper {
+  padding: 17px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping-info, .invite-link, .log-in {
+  font-weight: 600;
+}
+
+.shipping-info {
+  flex-basis: 80%;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
 
+.invite-link, .log-in {
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.hamburger-div { display: none; }
+
+.main-header .wrapper {
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { 
+  border: 1px solid #fff;
+  flex-basis: 19%;
+ }
+
+.nav-section { 
+  padding: 0 63px;
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-section-dropdown {
+  border: none;
+  background: none  ;
+  color: inherit;
+}
+
+.nav-section-dropdown, .nav-items {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* .nav-items { flex-basis: 45%; } */
+
+.form-group { flex-basis: 90%; }
+
+.form-control { flex-basis: 10%; }
+
+.search-box {
+  padding: 10px 26px;
+  border-radius: 27px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-basis: 25%;
+}
+
+.search-box input {
+  height: 100%;
+  border: none;
+  font-size: 19px;
+  outline: none;
+}
+
+.font-btn {
+  border: none;
+  background: inherit;
+}
+
+.search-btn::before { content: "\f002"; }
+
+.font-btn::before {
+  color: #504b4d;
+  font-family: "FontAwesome";
+  font-size: 27px;
+}
+
+.cart-btn::before {
+  margin-left: 24px;
+  content: "\f07a";
+  font-size: 30px;
+}
 
 
 
@@ -120,11 +228,26 @@ li {
   main styling starts here
 =================================*/
 
+/* latest offer section start here */
 
+.latest-offer { margin: 23px 0; }
 
+.latest-offer a {
+  display: flex;
+  justify-content: center;
+  color: #7cb0b4;
+  font-size: 20px;
+  font-weight: 600;
+}
 
+.latest-offer a::after {
+  margin-left: 15px;
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-size: 25px;
+}
 
-
+/* latest offer section end here */
 
 
 /*=================================

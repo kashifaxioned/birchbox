@@ -13,7 +13,7 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
+  <!-- <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css">
@@ -23,15 +23,17 @@
   <!--container start-->
   <div class="container">
     <!--header section start-->
-    <header>
-      <div class="wrapper">
+    <header class="header-section">
         <div class="header-info">
+          <div class="wrapper">
           <p class="shipping-info">uk &#38; ireland. free shipping &euro;35+</p>
-          <a class="inivite-link" href="#FIXME" title="Invite Friends" target="_self">invite friends</a>
+          <a class="invite-link" href="#FIXME" title="Invite Friends" target="_self">invite friends</a>
           <a class="log-in" href="#FIXME" title="Log In" target="_self">log in</a>
         </div>
+      </div>
         <section class="main-header">
-          <div class="hamburger-div">
+          <div class="wrapper">
+            <div class="hamburger-div">
             <button type="button" class="hamburger"></button>
           </div>
           <h1 class="logo">
@@ -39,8 +41,8 @@
                 src="https://via.placeholder.com/260x30.png/f6eddc/494448/?text=BIRCHBOX" alt="Birchbox"></a>
           </h1>
           <nav class="nav-section">
-            <li>
-              <select name="shop">
+            <li class="nav-items">
+              <select class="nav-section-dropdown" name="shop">
                 <option>shop</option>
                 <option>shop</option>
                 <option>shop</option>
@@ -49,13 +51,13 @@
                 <option>shop</option>
               </select>
             </li>
-            <li>
+            <li class="nav-items">
               <a href="#FIXME" title="Box" target="_self">box</a>
             </li>
-            <li>
+            <li class="nav-items">
               <a href="#FIXME" title="Gift" target="_self">gift</a>
             </li>
-            <li>
+            <li class="nav-items">
               <a href="#FIXME" title="Subscribe" target="_self">subscribe</a>
             </li>
           </nav>
@@ -70,8 +72,8 @@
           <div class="cart">
             <button class="cart-btn font-btn"></button>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </header>
     <!--header section end-->
     <!--main section start-->
@@ -79,53 +81,51 @@
       <!-- latest offer section start -->
       <div class="latest-offer">
         <div class="wrapper">
-          <a href="#FIXME" title="Latest Offer" target="_self"><span class="capitalize-text">shop</span> gifts for <span
-              class="capitalize-text">mother;s day</span> and get a <span class="uppercase-text">free</span> lipstick
-            duo!</a>
+          <a href="#FIXME" title="Latest Offer" target="_self">Shop gifts for Mother's Day and get a&#160;<span class="uppercase-text">free</span>&#160;lipstick duo!</a>
         </div>
       </div>
       <!-- latest offer section end -->
       <!-- banner section start -->
       <div class="banner">
-        <div class="wrapper">
-          <figure>
-            <img src="https://via.placeholder.com/1920X591.png/" alt="Banner">
-          </figure>
-          <h2 class="subtitle-text"><span class="capitalize-text">like</span> beauty? <span class="capitalize-text">love
-              birchbox.</span></h2>
-          <p class="banner-info"><span class="capitalize-tet">get</span> the <span class="uppercase-text">uk'</span>s
-            <span class="capitalize-text">no.1 beauty box</span> with 5 beauty treats tailored to ypur skin, hair and
-            style.</p>
-          <p class="banner-info"><span class="capitalize-text">it's</span> like a present to yourself every month!</p>
-          <div class="banner-btn-div">
-            <a href="" class="banner-btn">learn more</a>
-            <a href="" class="banner-btn">gift birchbox!</a>
-          </div>
-        </div>
+        <figure>
+          <img src="assets/image/bg.jpg" alt="Banner">
+        </figure>
+        <span class="offer-month">march 2019</span>
       </div>
       <!-- banner section end -->
+      <section class="about">
+        <div class="wrapper">
+          <h2 class="subtitle-text">Like beauty? Love Birchbox</h2>
+          <p class="about-info">Get the UK's No.1 Beauty Box with 5 beauty treats tailored to your skin, hair and style.</p>
+          <p class="secrion-info">It's like a present to yourself every month!</p>
+          <div class="banner-btn-div">
+            <a href="#FIXME" class="banner-btn">learn more</a>
+            <a href="#FIXME" class="banner-btn">gift birchbox!</a>
+          </div>
+        </div>
+      </section>
       <!-- monthly box section start -->
       <section class="monthly-box">
         <div class="wrapper">
           <h2 class="section-title">peek inside the monthly box</h2>
-          <p class="section-info"><span class="capitalize-text">become</span> part of our community of over one million
+          <p class="section-info">Become part of our community of over one million
             customers worldwide!</p>
           <ul class="monthly-list section-list">
             <li class="monthly-list-item section-list-item">
               <figure>
-                <img src="https://via.placeholder.com/425x264.png/" alt="Monthly Item">
+                <img src="assets/image/monthly-list/1.jpg" alt="Monthly Item 1">
                 <figcaption class="section-list-item-info">february 2018</figcaption>
               </figure>
             </li>
             <li class="monthly-list-item section-list -item">
               <figure>
-                <img src="https://via.placeholder.com/425x264.png/" alt="Monthly Item">
+                <img src="assets/image/monthly-list/2.jpg" alt="Monthly Item 2">
                 <figcaption class="section-list-item-info">january 2018</figcaption>
               </figure>
             </li>
             <li class="monthly-list-item section-list -item">
               <figure>
-                <img src="https://via.placeholder.com/425x264.png/" alt="Monthly Item">
+                <img src="assets/image/monthly-list/3.jpg" alt="Monthly Item 3">
                 <figcaption class="section-list-item-info">december 2017</figcaption>
               </figure>
             </li>
@@ -144,7 +144,7 @@
           <ul class="monthly-list section-list">
             <li class="monthly-list-item section-list-item">
               <figure>
-                <img src="https://via.placeholder.com/425x264.png/" alt="Best For you Item">
+                <img src="assets/image/best-for-you/1.jpg" alt="Best For you Item 1">
                 <h3 class="section-list-item-title">treat</h3>
                 <figcaption class="section-list-item-info">yourself to a beautiful box 0f 5 beauty goodies every month
                 </figcaption>
@@ -152,7 +152,7 @@
             </li>
             <li class="monthly-list-item section-list-item">
               <figure>
-                <img src="https://via.placeholder.com/425x264.png/" alt="Best For you Item">
+                <img src="assets/image/best-for-you/2.jpg" alt="Best For you Item 2">
                 <h3 class="section-list-item-title">discover</h3>
                 <figcaption class="section-list-item-info">new brands and products personalised to your skin, hair and
                   style</figcaption>
@@ -160,7 +160,7 @@
             </li>
             <li class="monthly-list-item section-list-item">
               <figure>
-                <img src="https://via.placeholder.com/425x264.png/" alt="Best For you Item">
+                <img src="assets/image/best-for-you/3.jpg" alt="Best For you Item 3">
                 <h3 class="section-list-item-title">buy</h3>
                 <figcaption class="section-list-item-info">product from this month's box, get 10% off</figcaption>
               </figure>
@@ -175,7 +175,7 @@
         <div class="wrapper">
           <h2 class="section-title">meet your new favourite shop</h2>
           <figure>
-            <img src="https://via.placeholder.com/1333x452.png/" alt="Favourite Products">
+            <img src="assets/image/favpurite.jpg" alt="Favourite Products">
           </figure>
           <a href="#FIXME" title="Learn More" target="_self" class="section-btn">learn more</a>
         </div>
